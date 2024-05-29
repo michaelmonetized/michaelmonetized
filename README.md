@@ -1,0 +1,5 @@
+- 👋 Hi, I’m @michaelmonetized
+- 👀 I’m interested in world domination
+- 🌱 I’m currently learning how to divide and conquer
+- 💞️ I’m looking to collaborate on a complete takeover
+- 📫 How to reach me michael@hustlelaunch.com - 828-331-7985
