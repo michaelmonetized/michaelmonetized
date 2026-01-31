@@ -1,179 +1,156 @@
 # Michael C. Hurley
 
- > I am a business operations and technology professional with over 20 years of experience in management, sales, marketing + growth, graphic design, and software development.
+**Operations & Technology Leader | 20+ Years Scaling Businesses | Full-Stack Developer**
 
-## TL;DR
-
-> Operations, technology, and marketing leader with 20+ years of experience scaling businesses across hospitality, technology, and professional services. As Co-Owner of Hurley's Creekside Dining & Rhum Bar, grew annual revenue from $1.3M to $5.33M through brand development, marketing strategy, and operational excellence. Built Studio 12 Designs from $50K to $387K in annual net profit while delivering branding, web design, and marketing services to clients. Full-stack developer (React, Next.js, Python, PHP) with CTO experience building SaaS platforms. Leads through listening, empowering teams with ownership, and following through—combining technical depth with creative marketing execution and P&L accountability.
+📍 Available immediately | Open to remote, hybrid, or relocation
 
 ---
 
-**Hire Me! I'm available to start ASAP!**
+## Why Hire Me
 
-[![Call](https://img.shields.io/badge/📞_828--593--1935-2ea44f?style=for-the-badge)](tel:828-593-1935)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:michaelmonetized@gmail.com)
+| What I've Done | The Numbers |
+|----------------|-------------|
+| Scaled a restaurant from startup to regional destination | **$1.3M → $5.33M** annual revenue (4x growth) |
+| Built and sold a profitable design agency | **$50K → $387K** annual net profit |
+| Led technology as CTO for a SaaS startup | Full product lifecycle: architecture to launch |
+| Managed teams across hospitality, tech, and services | **15+ direct reports**, P&L ownership |
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/michaelchurley/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/michaelmonetized)
-[![Twitter](https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/michaelh_rley)
-[![Website](https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.michaelchurley.com)
+**I bridge the gap between business strategy and technical execution.** I've run P&Ls, closed sales, designed brands, written code, and led teams—often all at the same company.
 
-## Proven Skills
+---
 
-![Management](https://img.shields.io/badge/Management-Leadership%20%7C%20Strategy%20%7C%20Operations%20%7C%20Finance%20%7C%20HR%20%7C%20Training-2ea44f?style=flat-square)
+## Contact
 
- - Leadership
- - Strategy
- - Operations
- - Sales
- - Marketing
- - Growth
+**Phone:** 828-593-1935
+**Email:** michaelmonetized@gmail.com
+**LinkedIn:** [linkedin.com/in/michaelchurley](https://www.linkedin.com/in/michaelchurley/)
+**GitHub:** [github.com/michaelmonetized](https://github.com/michaelmonetized)
+**Website:** [michaelchurley.com](https://www.michaelchurley.com)
 
+---
 
-![Technology](https://img.shields.io/badge/Technology-Software%20Dev%20%7C%20Hardware%20%7C%20Infrastructure-0077B5?style=flat-square)
+## Core Competencies
 
- - Software Development
- - Web Development
- - Graphic Design
- - UI/UX Design
- - Content Creation
- - Video Editing
+### Leadership & Operations
+- P&L Management, Budgeting & Forecasting
+- Team Building, Hiring & Performance Management
+- Strategic Planning & Business Development
+- Vendor Negotiations & Cost Optimization
+- Process Improvement & Operational Efficiency
 
-![Marketing](https://img.shields.io/badge/Marketing-Branding%20%7C%20Web%20Design%20%7C%20Strategy%20%7C%20Distribution-D14836?style=flat-square)
+### Technology & Development
+- Full-Stack Development: React, Next.js, TypeScript, Python, PHP
+- Database Design: PostgreSQL, MySQL, MongoDB, Redis
+- Cloud Infrastructure: AWS, GCP
+- SaaS Product Development & Architecture
+- Technical Team Leadership
 
- - Branding
- - Web Design
- - Messaging
- - Strategy
- - Distribution
+### Marketing & Growth
+- Brand Strategy & Identity Development
+- Digital Marketing & Customer Acquisition
+- Web Design & UX Strategy
+- Content Creation & Video Production
+- B2B and DTC Sales
 
-![Sales](https://img.shields.io/badge/Sales-DTC%20%7C%20B2B%20%7C%20Strategy%20%7C%20Closing%20%7C%20Retention-FF6B35?style=flat-square)
+---
 
- - Direct to Customer + B2B
- - Strategy
- - Closing
- - Retention
- - Reputation
+## Professional Experience
 
-### Languages
+### Hustle Launch — Owner/Operator
+**February 2024 – Present**
 
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+Consulting practice providing technology, marketing, and operational strategy to small businesses and startups.
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+- Deliver full-stack development (React, Next.js, Python) for client web applications
+- Design and execute go-to-market strategies for early-stage companies
+- Provide fractional CTO/COO services including technology roadmaps and process optimization
 
-### Frameworks & Tools
+---
 
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![Neovim](https://img.shields.io/badge/Neovim-57A143?style=flat-square&logo=neovim&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+### Kaibo, LLC (Realay.com) — Chief Technology Officer
+**March 2023 – April 2024**
 
-## Experience
+Led all technology strategy and product development for a SaaS platform connecting real estate professionals with clients.
 
-### Hustle Launch, Owner/Operator 02/2024 - Present
+- **Architected and built the core platform** from initial concept through production launch
+- Designed database schema, API architecture, and front-end user experience
+- Created investor pitch materials and product demos that secured funding conversations
+- Provided direct technical support and onboarding for enterprise clients
+- **Tech stack:** React, Next.js, PostgreSQL, AWS
 
- - Oversee all aspects of the company's success, including but not limited to: sales, marketing, finance, human resources, and technology.
- - Responsible for the company's growth and success.
- - Manage the company's finances, including but not limited to: revenue, expenses, and cash flow.
- - Manage the company's human resources, including but not limited to: employee recruitment, training, and development.
- - Manage the company's technology, including but not limited to: software development, hardware, and infrastructure.
+---
 
-### Kaibo, LLC D/B/A Realay.com, Chief Technology Officer 03/2023 - 04/2024
+### Boessel Enterprises (White Fox Studios) — Director of Operations
+**February 2015 – March 2023**
 
- - Responsible for the development and maintenance of the company's technology, including but not limited to: infrastructure, database design, software engineering, user experience, design, video production, investment acquisition, direct to customer marketing, sales and growth strategy.
- - Support c-suite with technology and infrastructure for analyzing and monitoring operations, usage, and performance.
- - Support clients with usability, maintenance, and direct technical support for onboarding, integration, and troubleshooting.
- - Collaborate with clients to develop and implement solutions to meet their needs.
+Ran day-to-day operations for a marketing and web design agency serving SMB clients across multiple industries.
 
-### Boessel Enterprises, LLC D/B/A White Fox Studios, Director of Operations 02/2015 - 03/2023
+- **Grew client base and revenue** through consultative sales and referral partnerships
+- Delivered 100+ branding, web design, and digital marketing projects
+- Built internal tools and client systems using WordPress, PHP, and custom integrations
+- Managed all finances: budgeting, cash flow, accounts receivable/payable
+- Hired, trained, and managed creative and technical staff
 
- - Responsible for all aspects of the company's success, including but not limited to: sales, marketing, finance, human resources, and technology.
- - Develop software and systems to support the business and business clients.
- - Sell marketing and web design services to clients.
- - Provide support and maintenance for clients' websites and online presence.
- - Collaborate with clients to develop and implement solutions to meet their needs.
- - Consult with clients on business strategy, marketing, and sales.
- - Conduct market research and analysis to inform business decisions and client marketing strategies.
- - Manage company finances:revenue, expenses, and cash flow.
- - Manage sales, marketing, and customer satisfaction.
- - Manage teams and staff: recruitment, training, development, performance, and compensation.
+---
 
-<details>
-<summary><strong>Earlier roles...</strong></summary>
+### Hurley's Creekside Dining & Rhum Bar — Co-Owner/Operator
+**July 2010 – May 2014**
 
-### Papa John's (Franklin, NC/Waynesville, NC) General Manager 05/2014 - 02/2015
+Co-founded and scaled a full-service restaurant from concept to regional destination in Dillsboro, NC.
 
- - Responsible for the management of the store's operations, including but not limited to: scheduling, customer service, inventory, sales, recruitment, human resources, cost analysis, budgeting and reporting to franchisee/corporate.
- - Manage the store's finances, including but not limited to: revenue, expenses, and cash flow.
- - Manage the store's sales, marketing, and customer satisfaction.
+- **Grew annual revenue from $1.3M to $5.33M** over four years (310% increase)
+- Developed brand identity, interior design, menu design, and all marketing materials
+- Managed 25+ employees across front-of-house, kitchen, and bar operations
+- Controlled food costs, labor costs, and vendor relationships to maintain profitability
+- Built reputation through local marketing, events, and exceptional guest experience
 
-### Hurley's Creekside Dining & Rhum Bar, Owner/Operator 07/2010 - 05/2014
+---
 
- - Responsible for all aspects of the restaurant's success, including but not limited to: brand design, marketing, finance, human resources, and technology.
- - Manage the restaurant's finances, including but not limited to: revenue, expenses, and cash flow.
- - Manage the restaurant's human resources, including but not limited to: employee recruitment, training and working all positions, and development.
- - Manage the restaurant's technology, including but not limited to: software, hardware, and infrastructure.
- - Manage the restaurant's marketing, including but not limited to: advertising, social media, and public relations.
- - Manage the restaurant's branding, including but not limited to: logo, web & menu design, presentation, interior design, and signage.
+### Studio 12 Designs — Owner/Operator
+**November 2007 – February 2010**
 
-### Studio 12 Designs, Owner/Operator 11/2007 - 02/2010
+Founded and grew a graphic design and web development studio.
 
- - Responsible for all aspects of the studio's success, including but not limited to: brand design, marketing, finance, human resources, and technology.
- - Manage the studio's finances, including but not limited to: revenue, expenses, and cash flow.
- - Manage the studio's human resources, including but not limited to: employee recruitment, training, and development.
- - Manage the studio's technology, including but not limited to: software, hardware, and infrastructure.
- - Manage the studio's marketing, including but not limited to: advertising, social media, and public relations.
- - Manage the studio's branding, including but not limited to: logo, web & menu design, presentation, interior design, and signage.
+- **Scaled from $50K to $387K in annual net profit** through client acquisition and retention
+- Delivered branding, print design, and website development for 50+ clients
+- Managed all business operations: sales, project management, finances, and client relations
 
-### Signs 'R' Us, Production Manager 07/2004 - 11/2007
+---
 
- - Responsible for all sign design and production, including but not limited to: design team output, production + packaging, equipment maintenance, and supplies.
- - Design team output: design review, customer feedback, and revisions.
- - Production + packaging: ensure the quality of sign materials, materials, final product, and packaging presentation.
- - Equipment maintenance: repair, maintain and replace equipement as needed.
- - Supplies: manage raw material inventory.
+### Additional Experience
 
-### Corporate Cleaning Services, Inc., Regional Manager 08/1999 - 07/2009
+**Papa John's (Franklin/Waynesville, NC) — General Manager** | May 2014 – Feb 2015
+Managed store operations, staff scheduling, inventory, and P&L reporting. Improved customer satisfaction scores and reduced food waste.
 
- - Responsible for all customer satisfaction for all clients in the greater south carolina lowcountry area, including but not limited to: team management and deployment, crisis response, HR, supply distribution, scheduling, recruitment, training and compensation, transporation, cleaning and grounds maintenance.
- - Additionally resonsible for all logo design, web design, and marketing/advertising for the company.
-</details>
+**Signs 'R' Us — Production Manager** | July 2004 – Nov 2007
+Led design team output and sign production. Managed equipment maintenance and materials inventory.
 
---------------------------------------------------------------------------------
+**Corporate Cleaning Services, Inc. — Regional Manager** | Aug 1999 – July 2009
+Oversaw client satisfaction across South Carolina Lowcountry region. Managed team deployment, HR, and logistics. Designed company logo, website, and all marketing materials.
+
+---
 
 ## Education
 
-### Trident Technical College
+**Bachelor of Science, Computer Science** — College of Charleston, 2005
+**Associate of Arts, Commercial Graphics** — Trident Technical College, 2003
 
- - A.A. in Commercial Graphics, 2003
+---
 
-### College of Charleston
+## Technical Skills
 
- - B.S. in Computer Science, 2005
+**Languages:** JavaScript, TypeScript, Python, PHP, SQL, C, C++, HTML, CSS
+**Frameworks:** React, Next.js, Node.js, WordPress
+**Databases:** PostgreSQL, MySQL, MongoDB, Redis
+**Cloud/DevOps:** AWS, GCP, Git, GitHub
+**Design:** Figma, Adobe Creative Suite, UI/UX Design
 
---------------------------------------------------------------------------------
+---
 
-## **Ready to bring me on board?**
+## Let's Talk
 
-[![Call](https://img.shields.io/badge/📞_828--593--1935-2ea44f?style=for-the-badge)](tel:828-593-1935)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:michaelmonetized@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/michaelchurley/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/michaelmonetized)
-[![Twitter](https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/michaelh_rley)
-[![Website](https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.michaelchurley.com)
+I'm looking for a role where I can combine business acumen with technical execution—whether that's leading operations, building products, or driving growth.
+
+**Phone:** 828-593-1935
+**Email:** michaelmonetized@gmail.com
+**LinkedIn:** [linkedin.com/in/michaelchurley](https://www.linkedin.com/in/michaelchurley/)
