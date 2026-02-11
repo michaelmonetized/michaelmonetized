@@ -1,7 +1,7 @@
 
 # HIRE Michael Hurley
 
-![Michael Hurley](https://www.ziprecruiter.com/protected-upload?upload_id=b3659d98)
+![Michael Hurley](https://github.com/michaelmonetized/michaelmonetized/blob/master/michael.jpeg)
 
 Canton, NC USA 28716 | [Website](https://www.michaelchurley.com) | [LinkedIn](https://www.linkedin.com/in/michaelchurley) | [GitHub](https://github.com/michaelmonetized/) | [Email](mailto:michaelmonetized@gmail.com) | [Call 828-593-1935](tel:+18285931935)
 
