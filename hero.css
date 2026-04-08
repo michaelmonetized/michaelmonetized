@@ -1,13 +1,209 @@
-      body {
-        margin: 0;
-        height: 100vh;
-        overflow: hidden;
-        background: #111 url("./hero-back.png") no-repeat / cover;
-      }
+:root {
+  --img-night: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/master/landscape-night.jpeg");
+  --img-spring: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/master/landscape-spring.jpeg");
+  --img-fall: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/master/landscape-fall.jpeg");
+  --img-winter: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/master/landscape-winter.jpeg");
+  --img-wireframe: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/master/landscape-wireframe.jpg");
+}
 
-      canvas {
-        width: 100vw;
-        height: 100vh;
-        display: block;
-      }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100svw;
+  min-height: 100svh;
+}
 
+body {
+  overflow: clip;
+  overflow-y: auto;
+
+  background-color: #111f;
+}
+
+header#hero {
+  position: relative;
+
+  width: 100svw;
+  height: 100svh;
+
+  background-image: var(--img-night);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  canvas#hero-canvas {
+    inset: 0;
+    position: absolute;
+    z-index: 2;
+
+    width: 100svw;
+    height: 100svh;
+
+    display: block;
+  }
+
+  .hero-flashes {
+    inset: 0;
+    position: absolute;
+  }
+
+  .hero-flash {
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100svw;
+    height: 100svh;
+
+    inset: 0;
+    position: absolute;
+
+    &:not(.hero-flash-wireframe) {
+      mask-image: linear-gradient(to bottom, #0000, #000f, #000f, #0000);
+      mask-size: 100% 300%;
+      mask-repeat: no-repeat;
+
+      animation: seasonWipe 15s linear infinite;
+      animation-delay: calc(3s + sibling-index() * 3s);
+
+      opacity: 0;
+    }
+  }
+
+  .hero-flash-spring {
+    background-image: var(--img-spring);
+  }
+
+  .hero-flash-night {
+    background-image: var(--img-night);
+    /* animation-delay: calc(3s + sibling-index() * 3s); */
+  }
+
+  .hero-flash-fall {
+    background-image: var(--img-fall);
+    /* animation-delay: calc(3s + sibling-index() * 3s); */
+  }
+
+  .hero-flash-winter {
+    background-image: var(--img-winter);
+    /* animation-delay: calc(3s + sibling-index() * 3s); */
+  }
+
+  .hero-flash-wireframe {
+    background-image: var(--img-wireframe);
+    mix-blend-mode: screen;
+    opacity: 0.03;
+  }
+
+  .hero-wipe-wireframe {
+    mix-blend-mode: screen;
+    opacity: 0.6;
+
+    background-image: var(--img-wireframe);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    mask-image: linear-gradient(to bottom, #0000 15%, #000f, #000f, #0000 85%);
+    mask-size: 100% 100%;
+    mask-position: 0% -100svh;
+    mask-repeat: no-repeat;
+
+    animation: wireframeWipe 21s var(--ease-wave) infinite;
+
+    width: 100svw;
+    height: 100svh;
+
+    inset: 0;
+    position: absolute;
+  }
+}
+
+@keyframes seasonWipe {
+  0% {
+    opacity: 0;
+    mask-position: 0% 100%; /* Gradient is below view */
+  }
+
+  10%,
+  20% {
+    opacity: 1;
+    mask-position: 0% 50%; /* Gradient is middle (visible) */
+  }
+
+  30%,
+  100% {
+    opacity: 0;
+    mask-position: 0% 0%; /* Gradient slides off top */
+  }
+}
+
+@keyframes wireframeWipe {
+  to {
+    mask-position: 0 100svh;
+  }
+}
+
+:root {
+  --ease-elastic: linear(
+    0,
+    0.003 0.3%,
+    0.01 0.6%,
+    0.038 1.2%,
+    0.09 1.9%,
+    0.159 2.6%,
+    0.321 3.9%,
+    0.827 7.5%,
+    0.96 8.6%,
+    1.061 9.6%,
+    1.142 10.6%,
+    1.202 11.6%,
+    1.225 12.1%,
+    1.242 12.6%,
+    1.254 13.1%,
+    1.263 13.7%,
+    1.266 14.4%,
+    1.262 15.1%,
+    1.249 15.9%,
+    1.23 16.7%,
+    1.185 18.1%,
+    1.043 21.9%,
+    1.008 23%,
+    0.979 24.1%,
+    0.961 25%,
+    0.945 26%,
+    0.936 26.9%,
+    0.93 27.9%,
+    0.929 29.1%,
+    0.935 30.5%,
+    0.947 32%,
+    0.986 35.9%,
+    1.001 37.8%,
+    1.013 39.9%,
+    1.018 42.1%,
+    1.017 44.8%,
+    1 52%,
+    0.995 56.3%,
+    1.001 70.2%,
+    1 84.2%,
+    1
+  );
+
+  --ease-wave: linear(
+    0,
+    0.029 1.3%,
+    0.119 2.8%,
+    0.659 8.7%,
+    0.871 11.6%,
+    1.009 14.6%,
+    1.052 16.2%,
+    1.078 17.9%,
+    1.088 19.7%,
+    1.085 21.7%,
+    1.014 31.4%,
+    0.993 38%,
+    1.001 57.6%,
+    1
+  );
+}

@@ -1,22 +1,25 @@
 const POINT_COUNT = 8;
-const RADIUS = 240;
+const RADIUS = 180;
 const SPRING = 0.16;
 const FRICTION = 0.69;
 const WANDER_SPEED = 0.075;
-const IDLE_TIMEOUT = 1000;
-const SCALE_FACTOR = 0;
+const IDLE_TIMEOUT = 500;
+const DECAY_TIME = 250;
+const REMIND_TIME = 1000;
+const REMIND_DURATION = 3000;
+const SCALE_FACTOR = 1.133;
 
-// NEW: Gelatinous Settings
-const JITTER_SPEED = 0.006; // How fast the blob undulates
-const JITTER_RANGE = 60; // Max distance sub-points move from center
-// -----------------------
+const JITTER_SPEED = 0.001;
+const JITTER_RANGE = 60;
 
-const canvas = document.getElementById("canvas");
+const canvas = document.getElementById("hero-canvas");
 const ctx = canvas.getContext("2d");
 
 let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
 let lastMouseTime = Date.now();
 let isIdle = true;
+let blobScale = 1; // Multiplier for the radius (0 to 1)
+
 let wanderTarget = {
   x: Math.random() * window.innerWidth,
   y: Math.random() * window.innerHeight,
@@ -29,8 +32,6 @@ class Point {
     this.vx = 0;
     this.vy = 0;
     this.index = index;
-    // Each point has its own sub-points for the "gelatinous" look
-    // Point 0 gets POINT_COUNT sub-points, Point 1 gets POINT_COUNT-1, etc.
     this.subPointCount = Math.max(1, POINT_COUNT - index);
     this.seeds = Array.from(
       { length: this.subPointCount },
@@ -50,18 +51,15 @@ class Point {
   }
 
   draw(context, baseRadius, time) {
-    if (baseRadius <= 0) return;
+    if (baseRadius <= 1) return; // Don't draw if effectively invisible
 
-    // Draw the cluster of sub-points
     for (let i = 0; i < this.subPointCount; i++) {
-      // Create organic movement using Sine/Cosine and the unique seed
       const offsetX =
         Math.cos(time * JITTER_SPEED + this.seeds[i]) * JITTER_RANGE;
       const offsetY =
         Math.sin(time * JITTER_SPEED * 1.1 + this.seeds[i]) * JITTER_RANGE;
 
       context.beginPath();
-      // We divide the radius slightly so the cluster feels like one mass
       context.arc(
         this.x + offsetX,
         this.y + offsetY,
@@ -81,11 +79,10 @@ const blobCtx = blobCanvas.getContext("2d");
 const maskCanvas = document.createElement("canvas");
 const maskCtx = maskCanvas.getContext("2d");
 
-const imgBack = new Image();
 const imgFront = new Image();
-imgBack.crossOrigin = imgFront.crossOrigin = "anonymous";
-imgBack.src = "landscape-wireframe.jpg";
-imgFront.src = "landscape-night.jpeg";
+imgFront.crossOrigin = "anonymous";
+imgFront.src =
+  "https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/master/landscape-wireframe.jpg";
 
 const handleResize = () => {
   canvas.width = blobCanvas.width = maskCanvas.width = window.innerWidth;
@@ -126,15 +123,16 @@ function drawImageCover(context, img) {
   const imgRatio = img.width / img.height;
   const canvasRatio = w / h;
   let rw, rh, x, y;
+
   if (canvasRatio > imgRatio) {
     rw = w;
     rh = w / imgRatio;
     x = 0;
-    y = (h - rh) / 2;
+    y = h - rh;
   } else {
     rw = h * imgRatio;
     rh = h;
-    x = (w - rw) / 2;
+    x = 0;
     y = 0;
   }
   context.drawImage(img, x, y, rw, rh);
@@ -142,6 +140,27 @@ function drawImageCover(context, img) {
 
 function animate(time) {
   updateWander();
+
+  // --- Visibility Logic ---
+  const idleTime = Date.now() - lastMouseTime;
+  let targetScale = 1;
+
+  if (isIdle) {
+    if (idleTime > DECAY_TIME) {
+      targetScale = 0; // Start decaying
+    }
+
+    // Reminder Logic
+    const reminderStart = DECAY_TIME + REMIND_TIME;
+    const reminderEnd = reminderStart + REMIND_DURATION;
+
+    if (idleTime > reminderStart && idleTime < reminderEnd) {
+      targetScale = 1; // Reappear
+    }
+  }
+
+  // Smoothly transition scale for a "breath" effect
+  blobScale = lerp(blobScale, targetScale, 0.05);
 
   // 1. Update Physics
   points[0].update(mouse.x, mouse.y);
@@ -155,12 +174,14 @@ function animate(time) {
 
   points.forEach((p, i) => {
     let r;
+    // Apply the global blobScale to the radius calculation
+    const currentMaxRadius = RADIUS * blobScale;
+
     if (SCALE_FACTOR === 0) {
-      r = RADIUS * (1 - i / (POINT_COUNT - 1));
+      r = currentMaxRadius * (1 - i / (POINT_COUNT - 1));
     } else {
-      r = RADIUS / Math.pow(SCALE_FACTOR, i);
+      r = currentMaxRadius / Math.pow(SCALE_FACTOR, i);
     }
-    // Call the new internal draw method for the cluster
     p.draw(blobCtx, r, time);
   });
 
@@ -175,7 +196,6 @@ function animate(time) {
 
   // 4. Final Composition
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  drawImageCover(ctx, imgBack);
   ctx.drawImage(maskCanvas, 0, 0);
 
   requestAnimationFrame(animate);

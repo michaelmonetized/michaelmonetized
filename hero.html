@@ -2,10 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./hero.css" type="text/css" />
-    <title>Hero</title>
+    <link href="./style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body id="top">
+    <header id="hero" role="banner" class="hero-wrapper">
+      <div class="hero-flashes">
+        <div class="hero-flash hero-flash-spring"></div>
+        <div class="hero-flash hero-flash-night"></div>
+        <div class="hero-flash hero-flash-fall"></div>
+        <div class="hero-flash hero-flash-winter"></div>
+        <div class="hero-flash hero-flash-wireframe"></div>
+      </div>
+      <div class="hero-wipe-wireframe"></div>
+      <canvas id="hero-canvas"></canvas>
+    </header>
+    <section>
+      <div id="logo"></div>
+      <nav id="menu">
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#work">On the clock</a></li>
+          <li><a href="#play">Off the clock</a></li>
+          <li><a href="#calendar">Calendar</a></li>
+        </ul>
+      </nav>
+    </section>
+
     <svg width="0" height="0" style="position: absolute">
       <defs>
         <filter id="gooey">
@@ -20,8 +42,6 @@
       </defs>
     </svg>
 
-    <canvas id="canvas"></canvas>
-
-    <script src="./hero.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

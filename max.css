@@ -1,0 +1,197 @@
+@font-face {
+  font-family: max;
+  font-weight: 100;
+  font-style: normal;
+  font-variant: normal;
+  src: url("/max/max15.eot");
+  src: url("/max/max15.eot?#iefix") format("embedded-opentype"),
+    url("/max/max15.woff") format("woff"), url("/max/max15.ttf") format("truetype"),
+    url("/max/max15.svg#max15") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 100;
+  font-style: italic;
+  font-variant: normal;
+  src: url("/max/max16.eot");
+  src: url("/max/max16.eot?#iefix") format("embedded-opentype"),
+    url("/max/max16.woff") format("woff"), url("/max/max16.ttf") format("truetype"),
+    url("/max/max16.svg#max16") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 200;
+  font-style: normal;
+  font-variant: normal;
+  src: url("/max/max25.eot");
+  src: url("/max/max25.eot?#iefix") format("embedded-opentype"),
+    url("/max/max25.woff") format("woff"), url("/max/max25.ttf") format("truetype"),
+    url("/max/max25.svg#max25") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 200;
+  font-style: italic;
+  font-variant: normal;
+  src: url("/max/max26.eot");
+  src: url("/max/max26.eot?#iefix") format("embedded-opentype"),
+    url("/max/max26.woff") format("woff"), url("/max/max26.ttf") format("truetype"),
+    url("/max/max26.svg#max26") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 300;
+  font-style: normal;
+  font-variant: normal;
+  src: url("/max/max35.eot");
+  src: url("/max/max35.eot?#iefix") format("embedded-opentype"),
+    url("/max/max35.woff") format("woff"), url("/max/max35.ttf") format("truetype"),
+    url("/max/max35.svg#max35") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 300;
+  font-style: italic;
+  font-variant: normal;
+  src: url("/max/max36.eot");
+  src: url("/max/max36.eot?#iefix") format("embedded-opentype"),
+    url("/max/max36.woff") format("woff"), url("/max/max36.ttf") format("truetype"),
+    url("/max/max36.svg#max36") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  src: url("/max/max45.eot");
+  src: url("/max/max45.eot?#iefix") format("embedded-opentype"),
+    url("/max/max45.woff") format("woff"), url("/max/max45.ttf") format("truetype"),
+    url("/max/max45.svg#max45") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 400;
+  font-style: italic;
+  font-variant: normal;
+  src: url("/max/max46.eot");
+  src: url("/max/max46.eot?#iefix") format("embedded-opentype"),
+    url("/max/max46.woff") format("woff"), url("/max/max46.ttf") format("truetype"),
+    url("/max/max46.svg#max46") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 500;
+  font-style: normal;
+  font-variant: normal;
+  src: url("/max/max55.eot");
+  src: url("/max/max55.eot?#iefix") format("embedded-opentype"),
+    url("/max/max55.woff") format("woff"), url("/max/max55.ttf") format("truetype"),
+    url("/max/max55.svg#max55") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 500;
+  font-style: italic;
+  font-variant: normal;
+  src: url("/max/max56.eot");
+  src: url("/max/max56.eot?#iefix") format("embedded-opentype"),
+    url("/max/max56.woff") format("woff"), url("/max/max56.ttf") format("truetype"),
+    url("/max/max56.svg#max56") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 600;
+  font-style: normal;
+  font-variant: normal;
+  src: url("/max/max65.eot");
+  src: url("/max/max65.eot?#iefix") format("embedded-opentype"),
+    url("/max/max65.woff") format("woff"), url("/max/max65.ttf") format("truetype"),
+    url("/max/max65.svg#max65") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 600;
+  font-style: italic;
+  font-variant: normal;
+  src: url("/max/max66.eot");
+  src: url("/max/max66.eot?#iefix") format("embedded-opentype"),
+    url("/max/max66.woff") format("woff"), url("/max/max66.ttf") format("truetype"),
+    url("/max/max66.svg#max66") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 700;
+  font-style: normal;
+  font-variant: normal;
+  src: url("/max/max75.eot");
+  src: url("/max/max75.eot?#iefix") format("embedded-opentype"),
+    url("/max/max75.woff") format("woff"), url("/max/max75.ttf") format("truetype"),
+    url("/max/max75.svg#max75") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 700;
+  font-style: italic;
+  font-variant: normal;
+  src: url("/max/max76.eot");
+  src: url("/max/max76.eot?#iefix") format("embedded-opentype"),
+    url("/max/max76.woff") format("woff"), url("/max/max76.ttf") format("truetype"),
+    url("/max/max76.svg#max76") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 800;
+  font-style: normal;
+  font-variant: normal;
+  src: url("/max/max95.eot");
+  src: url("/max/max95.eot?#iefix") format("embedded-opentype"),
+    url("/max/max95.woff") format("woff"), url("/max/max95.ttf") format("truetype"),
+    url("/max/max95.svg#max95") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 800;
+  font-style: italic;
+  font-variant: normal;
+  src: url("/max/max96.eot");
+  src: url("/max/max96.eot?#iefix") format("embedded-opentype"),
+    url("/max/max96.woff") format("woff"), url("/max/max96.ttf") format("truetype"),
+    url("/max/max96.svg#max96") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  src: url("/max/max95.eot");
+  src: url("/max/max95.eot?#iefix") format("embedded-opentype"),
+    url("/max/max95.woff") format("woff"), url("/max/max95.ttf") format("truetype"),
+    url("/max/max95.svg#max95") format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 900;
+  font-style: italic;
+  font-variant: normal;
+  src: url("/max/max96.eot");
+  src: url("/max/max96.eot?#iefix") format("embedded-opentype"),
+    url("/max/max96.woff") format("woff"), url("/max/max96.ttf") format("truetype"),
+    url("/max/max96.svg#max96") format("svg");
+}
