@@ -84,8 +84,8 @@ const maskCtx = maskCanvas.getContext("2d");
 const imgBack = new Image();
 const imgFront = new Image();
 imgBack.crossOrigin = imgFront.crossOrigin = "anonymous";
-imgBack.src = "./hero-back.png";
-imgFront.src = "./hero-front.png";
+imgBack.src = "landscape-wireframe.jpg";
+imgFront.src = "landscape-night.jpeg";
 
 const handleResize = () => {
   canvas.width = blobCanvas.width = maskCanvas.width = window.innerWidth;
