@@ -1,9 +1,332 @@
+@import "https://test-create-next-app.vercel.app/_next/static/chunks/1h_h1-1_cd9g5.css?dpl=dpl_gAQRR7yi9L9AZjVuJRUv48HbKWZg";
+
+@font-face {
+  font-family: max;
+  font-weight: 100;
+  font-style: normal;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max15.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max15.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max15.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max15.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max15.svg#max15")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 100;
+  font-style: italic;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max16.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max16.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max16.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max16.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max16.svg#max16")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 200;
+  font-style: normal;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max25.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max25.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max25.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max25.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max25.svg#max25")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 200;
+  font-style: italic;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max26.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max26.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max26.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max26.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max26.svg#max26")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 300;
+  font-style: normal;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max35.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max35.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max35.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max35.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max35.svg#max35")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 300;
+  font-style: italic;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max36.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max36.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max36.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max36.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max36.svg#max36")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max45.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max45.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max45.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max45.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max45.svg#max45")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 400;
+  font-style: italic;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max46.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max46.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max46.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max46.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max46.svg#max46")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 500;
+  font-style: normal;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max55.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max55.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max55.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max55.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max55.svg#max55")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 500;
+  font-style: italic;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max56.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max56.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max56.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max56.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max56.svg#max56")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 600;
+  font-style: normal;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max65.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max65.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max65.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max65.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max65.svg#max65")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 600;
+  font-style: italic;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max66.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max66.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max66.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max66.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max66.svg#max66")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 700;
+  font-style: normal;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max75.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max75.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max75.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max75.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max75.svg#max75")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 700;
+  font-style: italic;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max76.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max76.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max76.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max76.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max76.svg#max76")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 800;
+  font-style: normal;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.svg#max95")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 800;
+  font-style: italic;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.svg#max96")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.svg#max95")
+      format("svg");
+}
+
+@font-face {
+  font-family: max;
+  font-weight: 900;
+  font-style: italic;
+  font-variant: normal;
+  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.eot");
+  src:
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.ttf")
+      format("truetype"),
+    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.svg#max96")
+      format("svg");
+}
+
 :root {
   --img-night: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/master/landscape-night.jpeg");
   --img-spring: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/master/landscape-spring.jpeg");
   --img-fall: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/master/landscape-fall.jpeg");
   --img-winter: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/master/landscape-winter.jpeg");
   --img-wireframe: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/master/landscape-wireframe.jpg");
+
+  font-family: max;
+  font-size: 21px;
+  line-height: 1;
+  color: var(--foreground);
+  background: var(--background);
+}
+
+:root,
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html,
@@ -18,12 +341,12 @@ body {
   overflow: clip;
   overflow-y: auto;
 
-  background-color: #111f;
+  background-color: var(--background);
 }
 
 header#hero {
-  position: relative;
-
+  position: sticky;
+  z-index: 7070;
   width: 100svw;
   height: 100svh;
 
@@ -31,6 +354,10 @@ header#hero {
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
+
+  animation: header-hero-scale 10s linear forwards;
+  animation-timeline: view();
+  animation-range: exit 0% cover 100%;
 
   canvas#hero-canvas {
     inset: 0;
@@ -64,8 +391,8 @@ header#hero {
       mask-size: 100% 300%;
       mask-repeat: no-repeat;
 
-      animation: seasonWipe 15s linear infinite;
-      animation-delay: calc(3s + sibling-index() * 3s);
+      animation: seasonWipe calc(6s + sibling-count() * 6s) linear infinite;
+      animation-delay: calc(6s + sibling-index() * 3s);
 
       opacity: 0;
     }
@@ -77,17 +404,14 @@ header#hero {
 
   .hero-flash-night {
     background-image: var(--img-night);
-    /* animation-delay: calc(3s + sibling-index() * 3s); */
   }
 
   .hero-flash-fall {
     background-image: var(--img-fall);
-    /* animation-delay: calc(3s + sibling-index() * 3s); */
   }
 
   .hero-flash-winter {
     background-image: var(--img-winter);
-    /* animation-delay: calc(3s + sibling-index() * 3s); */
   }
 
   .hero-flash-wireframe {
@@ -117,6 +441,65 @@ header#hero {
 
     inset: 0;
     position: absolute;
+  }
+
+  #hero-next-pos {
+    bottom: 0;
+    z-index: 9390;
+    width: 119px;
+    height: 244px;
+
+    svg {
+      fill: var(--background);
+      stroke-width: 4px;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 95%;
+      line-height: 1;
+      font-weight: 900;
+
+      small {
+        font-size: 85%;
+      }
+    }
+
+    hr {
+      margin: 0.5em 0;
+    }
+
+    #vizible-icon-wrapper {
+      transform-style: preserve-3d;
+    }
+
+    #vizible-icon-white {
+      position: absolute;
+      z-index: 3;
+      left: 50%;
+      translate: -50% 0;
+    }
+
+    #vizible-icon {
+      position: relative;
+      z-index: 4;
+
+      mask-image: radial-gradient(circle 50px at center, #ffff 80%, #fff0 81%);
+      mask-repeat: no-repeat;
+      mask-position: -50px 50px;
+
+      transition: mask-position 1s linear;
+
+      &:hover {
+        mask-position: 0px 0px;
+      }
+    }
+
+    img.reef {
+      top: 50%;
+      translate: 0 -66.7%;
+    }
   }
 }
 
@@ -206,4 +589,332 @@ header#hero {
     1.001 57.6%,
     1
   );
+}
+
+#navbar {
+  z-index: 9090;
+
+  svg path {
+    fill: color-mix(in srgb, var(--foreground) 70%, transparent);
+  }
+
+  #menu {
+    .menu-trigger {
+      transition: all 1s var(--ease-wave);
+
+      .menu-icon {
+        position: relative;
+        border-width: 4px;
+        /* opacity: .7; */
+        overflow: clip;
+
+        &:before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: var(--background);
+          border-radius: 99Q;
+          scale: 6;
+          translate: 0 -350%;
+          z-index: -1;
+          transition: translate 3s var(--ease-elastic);
+          pointer-events: none;
+        }
+
+        &:hover:before {
+          translate: 0 -50%;
+        }
+
+        hr {
+          margin: 0;
+          padding: 0;
+          border-width: 2px;
+          border-color: var(--foreground);
+          translate: 0 -2px;
+          scale: 1 1;
+          rotate: 0deg;
+          transition:
+            translate 3s var(--ease-elastic),
+            scale 3s var(--ease-elastic),
+            rotate 3s var(--ease-elastic);
+        }
+
+        hr:first-child {
+          translate: 0.25em -2px;
+          scale: 0.75 1;
+        }
+
+        &:hover {
+          hr:first-child {
+            translate: 0 -2px;
+            scale: 1 1;
+          }
+
+          hr:last-child {
+            translate: 0.25em -2px;
+            scale: 0.75 1;
+          }
+        }
+      }
+    }
+
+    .menu-state {
+      border: none;
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    #sheet-menu {
+      translate: 0 0;
+      translate: 100svw 0;
+      z-index: 9090;
+      transition: translate 0.6s var(--ease-wave);
+    }
+
+    &:has(.menu-state:checked) {
+      #sheet-menu {
+        translate: 0 0;
+      }
+
+      .menu-trigger {
+        z-index: 9191;
+        position: relative;
+
+        .menu-icon {
+          hr:first-child {
+            translate: 0 0.3em;
+            scale: 0.5 0.5;
+            rotate: 45deg;
+          }
+
+          hr:last-child {
+            translate: 0 -0.6em;
+            scale: 0.5 0.5;
+            rotate: -45deg;
+          }
+
+          &:hover {
+            hr:first-child {
+              translate: 0 0.3em;
+              scale: 0.667 0.667;
+            }
+
+            hr:last-child {
+              translate: 0 -0.6em;
+              scale: 0.667 0.667;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wave-text {
+  display: inline-block;
+  text-shadow: 0 0.86em;
+  line-height: 0.86em;
+  height: 0.86em;
+  overflow-y: clip;
+  width: fit-content;
+  margin: 0 auto;
+
+  b {
+    display: inline-block;
+    transition: translate 0s linear;
+    transition-delay: 100ms;
+    /* translate: 0 -0.858em; */
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+  }
+
+  &:hover {
+    b {
+      translate: 0 -0.86em;
+      transition: translate 2s var(--ease-wave);
+      transition-delay: calc(100ms + sibling-index() * 20ms);
+    }
+  }
+}
+
+:hover {
+  > .wave-text {
+    b {
+      translate: 0 -0.858em;
+      transition: translate 2s var(--ease-wave);
+      transition-delay: calc(100ms + sibling-index() * 20ms);
+    }
+  }
+}
+
+@keyframes header-hero-scale {
+  50% {
+    opacity: 1;
+    scale: 0.2;
+    filter: grayscale(1);
+    translate: 0 50%;
+  }
+
+  50.01% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    scale: 0.2;
+    filter: grayscale(1);
+    translate: 0 50%;
+  }
+}
+
+.-mt-sm {
+  margin-top: -0.25em !important;
+}
+
+.spin3d {
+  transform: perspective(1000px) rotateX(60deg) rotateY(0deg) rotateZ(0deg);
+  transform-origin: center center;
+  animation: spin3d 3s linear infinite;
+}
+
+@keyframes spin3d {
+  to {
+    transform: perspective(1000px) rotateX(60deg) rotateY(0deg) rotateZ(360deg);
+  }
+}
+
+.animate-fadeInUp {
+  opacity: 0;
+  translate: 0 100%;
+  animation: fadeInUp 1s var(--ease-wave) forwards;
+  animation-delay: calc(sibling-index() * 250ms);
+}
+
+.animate-view-entrance {
+  animation-timeline: view();
+  animation-range:
+    entry 0%,
+    entry 5%;
+}
+
+.animate-view-exit {
+  animation-timeline: view();
+  animation-range:
+    exit 95%,
+    exit 100%;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    translate: 0 100%;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.scale-1\/2 {
+  scale: 0.5;
+}
+
+.scale-1\/5 {
+  scale: 0.2;
+}
+
+.h-svh {
+  height: 100svh;
+}
+
+.w-svw {
+  width: 100svw;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.object-left-bottom {
+  object-position: bottom left;
+}
+
+.grayscale {
+  filter: grayscale(1);
+}
+.marquee-container {
+  overflow: hidden;
+  width: 100svw;
+}
+
+.infinite-marquee {
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+}
+
+/* LEFT Direction */
+.marquee-direction-left {
+  translate: 0 0;
+  animation: marquee-left 20s linear infinite;
+}
+
+/* RIGHT Direction */
+.marquee-direction-right {
+  translate: 0 0;
+  animation: marquee-right 30s linear infinite;
+}
+
+@keyframes marquee-left {
+  to {
+    translate: -50% 0;
+  }
+}
+
+@keyframes marquee-right {
+  from {
+    translate: -50% 0;
+  }
+}
+
+.draw-stroke {
+  stroke-dasharray: var(--path-length, 1000);
+  stroke-dashoffset: var(--path-length, 1000);
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  animation: draw-on-scroll 3s var(--ease-wave) both;
+  animation-delay: 1.5s;
+}
+
+.draw-stroke-on-enter {
+  mix-blend-mode: screen;
+  stroke-dasharray: var(--path-length, 1000);
+  stroke-dashoffset: var(--path-length, 1000);
+
+  animation: draw-on-scroll 30s linear both;
+  animation-timeline: scroll();
+
+  animation-range: entry 10% cover 50%;
+}
+
+@keyframes draw-on-scroll {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#signature {
+  z-index: 9890;
+  pointer-events: none;
+  mix-blend-mode: screen;
 }

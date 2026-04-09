@@ -202,3 +202,27 @@ function animate(time) {
 }
 
 animate(0);
+
+function waveText() {
+  const el = document.querySelectorAll(".wave-text");
+  el.forEach((ele) => {
+    const elText = ele.textContent;
+    const elChars = elText.split("");
+    ele.innerHTML = `<b>${elChars.join("</b><b>")}</b>`.replaceAll(
+      "<b> </b>",
+      " ",
+    );
+  });
+}
+
+waveText();
+
+const drawPaths = document.querySelectorAll(
+  ".draw-stroke, .draw-stroke-on-enter",
+);
+
+drawPaths.forEach((path) => {
+  const length = path.getTotalLength();
+  // Set the CSS variable --path-length on the individual element
+  path.style.setProperty("--path-length", length);
+});
