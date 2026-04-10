@@ -204,8 +204,8 @@ function animate(time) {
 animate(0);
 
 function waveText() {
-  const el = document.querySelectorAll(".wave-text");
-  el.forEach((ele) => {
+  const el = document.querySelectorAll(".wave-text, .wave-text-in");
+  el.forEach((ele, index) => {
     const elText = ele.textContent;
     const elChars = elText.split("");
     ele.innerHTML = `<b>${elChars.join("</b><b>")}</b>`.replaceAll(
@@ -226,3 +226,168 @@ drawPaths.forEach((path) => {
   // Set the CSS variable --path-length on the individual element
   path.style.setProperty("--path-length", length);
 });
+
+const since99 = document.querySelectorAll(".since99");
+
+since99.forEach((span) => {
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const since = currentYear - 1999;
+
+  span.innerText = since;
+});
+
+const glCanvas = document.getElementById("goo-background");
+const gl = glCanvas.getContext("webgl");
+
+// --- VERTEX SHADER ---
+// This simply tells the GPU to draw a flat rectangle across the entire screen
+const vsSource = `
+  attribute vec2 position;
+  void main() {
+    gl_Position = vec4(position, 0.0, 1.0);
+  }
+`;
+
+// --- FRAGMENT SHADER (THE MAGIC) ---
+// This calculates the color of every single pixel on the screen 60 times a second
+const fsSource = `
+  precision highp float;
+  uniform vec2 u_resolution;
+  uniform float u_time;
+
+  // The "Smooth Minimum" function - This replaces the SVG Goo Filter!
+  // It calculates the mathematical intersection of two circles and bridges them.
+  float smin(float a, float b, float k) {
+      float h = clamp(0.5 + 0.5 * (b - a) / k, 0.0, 1.0);
+      return mix(b, a, h) - k * h * (1.0 - h);
+  }
+
+  void main() {
+      // Normalize pixel coordinates (from 0 to 1) and correct aspect ratio
+      vec2 uv = gl_FragCoord.xy / u_resolution.xy;
+      vec2 st = uv;
+      st.x *= u_resolution.x / u_resolution.y;
+
+      float dist = 100.0; // Start with a huge distance
+
+      // Grid definition: 4 columns, 3 rows
+      float cols = 4.0;
+      float rows = 3.0;
+
+      // Loop to create the 4x3 grid (12 groups total)
+      for(float i = 0.0; i < 4.0; i++) {
+          for(float j = 0.0; j < 3.0; j++) {
+              
+              // Center of current grid cell
+              vec2 center = vec2((i + 0.5) / cols, (j + 0.5) / rows);
+              center.x *= u_resolution.x / u_resolution.y; 
+
+              // Create a unique mathematical seed based on grid position
+              float seed = i * 12.3 + j * 45.6;
+
+              // Group rotation (Different speeds and directions based on seed)
+              float speed = 0.2 + mod(seed, 0.5);
+              float direction = mod(i + j, 2.0) == 0.0 ? 1.0 : -1.0;
+              float groupRotation = u_time * speed * direction;
+
+              // Create the 3 circles inside this specific group
+              for(float k = 0.0; k < 3.0; k++) {
+                  
+                  // Space the 3 circles evenly around the center (120 degrees apart)
+                  float angle = (k / 3.0) * 6.28318 + groupRotation;
+                  
+                  // Calculate bobbing distance from the center point
+                  float bob = sin(u_time * (1.0 + mod(seed + k, 1.0))) * 0.04 + 0.05;
+                  
+                  // Calculate exact position of this circle
+                  vec2 pos = center + vec2(cos(angle), sin(angle)) * bob;
+                  
+                  // Distance from the current pixel to this circle
+                  float circleRadius = 0.035;
+                  float circleDist = length(st - pos) - circleRadius;
+
+                  // THE GOO MATH: Smoothly combine this circle with the others
+                  // 0.08 is the "Gooey Factor" - increase it for more melting!
+                  dist = smin(dist, circleDist, 0.08); 
+              }
+          }
+      }
+
+      // --- COLOR MIXING ---
+      // Anti-aliased edge detection (Is this pixel inside or outside the goo?)
+      float alpha = smoothstep(0.001, -0.001, dist);
+      
+      // Gradient based on depth: Dark Blue -> Light Blue -> White Core
+      vec3 blobColor = mix(vec3(0.0), vec3(0.16, 0.32, 0.75), alpha); 
+      blobColor = mix(blobColor, vec3(0.29, 0.56, 0.89), smoothstep(-0.01, -0.03, dist));
+      blobColor = mix(blobColor, vec3(1.0, 1.0, 1.0), smoothstep(-0.03, -0.06, dist)); 
+
+      // Deep night background color
+      vec3 bgColor = vec3(0.02, 0.02, 0.03);
+      
+      // Final pixel output
+      vec3 finalColor = mix(bgColor, blobColor, alpha);
+      gl_FragColor = vec4(finalColor, 1.0);
+  }
+`;
+
+// --- WEBGL COMPILATION & SETUP ---
+function compileShader(gl, type, source) {
+  const shader = gl.createShader(type);
+  gl.shaderSource(shader, source);
+  gl.compileShader(shader);
+  if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+    console.error(gl.getShaderInfoLog(shader));
+    gl.deleteShader(shader);
+    return null;
+  }
+  return shader;
+}
+
+const vertexShader = compileShader(gl, gl.VERTEX_SHADER, vsSource);
+const fragmentShader = compileShader(gl, gl.FRAGMENT_SHADER, fsSource);
+
+const program = gl.createProgram();
+gl.attachShader(program, vertexShader);
+gl.attachShader(program, fragmentShader);
+gl.linkProgram(program);
+gl.useProgram(program);
+
+// Create a full-screen rectangle to draw the shader onto
+const positionBuffer = gl.createBuffer();
+gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+gl.bufferData(
+  gl.ARRAY_BUFFER,
+  new Float32Array([
+    -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0,
+  ]),
+  gl.STATIC_DRAW,
+);
+
+const positionLocation = gl.getAttribLocation(program, "position");
+gl.enableVertexAttribArray(positionLocation);
+gl.vertexAttribPointer(positionLocation, 2, gl.FLOAT, false, 0, 0);
+
+// Get variable locations
+const timeLocation = gl.getUniformLocation(program, "u_time");
+const resolutionLocation = gl.getUniformLocation(program, "u_resolution");
+
+// Handle Resizing
+function resize() {
+  glCanvas.width = window.innerWidth;
+  glCanvas.height = window.innerHeight;
+  gl.viewport(0, 0, glCanvas.width, glCanvas.height);
+  gl.uniform2f(resolutionLocation, glCanvas.width, glCanvas.height);
+}
+window.addEventListener("resize", resize);
+resize();
+
+// --- ANIMATION LOOP ---
+function render(time) {
+  time *= 0.001; // Convert to seconds
+  gl.uniform1f(timeLocation, time);
+  gl.drawArrays(gl.TRIANGLES, 0, 6);
+  requestAnimationFrame(render);
+}
+requestAnimationFrame(render);

@@ -495,12 +495,12 @@ header#hero {
         mask-position: 0px 0px;
       }
     }
-
-    img.reef {
-      top: 50%;
-      translate: 0 -66.7%;
-    }
   }
+}
+
+img.reef {
+  top: 50%;
+  translate: 0 -66.7%;
 }
 
 @keyframes seasonWipe {
@@ -593,10 +593,6 @@ header#hero {
 
 #navbar {
   z-index: 9090;
-
-  svg path {
-    fill: color-mix(in srgb, var(--foreground) 70%, transparent);
-  }
 
   #menu {
     .menu-trigger {
@@ -754,6 +750,36 @@ header#hero {
   }
 }
 
+.wave-text-in {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  height: 0.86em;
+  line-height: 0.86em;
+  overflow-y: clip;
+
+  b {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 0.86em;
+    line-height: 0.86em;
+    translate: 0 0.86em;
+
+    animation: wave-text-in 20s var(--ease-wave) both;
+    animation-delay: calc(100ms + sibling-index() * 2000ms);
+    animation-timeline: scroll(root block);
+    animation-range: entry 10% cover 20%;
+  }
+}
+
+@keyframes wave-text-in {
+  to {
+    translate: 0 0;
+  }
+}
+
 @keyframes header-hero-scale {
   50% {
     opacity: 1;
@@ -797,7 +823,7 @@ header#hero {
   animation-delay: calc(sibling-index() * 250ms);
 }
 
-.animate-view-entrance {
+.animate-view-entry {
   animation-timeline: view();
   animation-range:
     entry 0%,
@@ -806,6 +832,20 @@ header#hero {
 
 .animate-view-exit {
   animation-timeline: view();
+  animation-range:
+    exit 95%,
+    exit 100%;
+}
+
+.animate-scroll-entry {
+  animation-timeline: scroll(root);
+  animation-range:
+    entry 0%,
+    entry 5%;
+}
+
+.animate-scroll-exit {
+  animation-timeline: scroll(root);
   animation-range:
     exit 95%,
     exit 100%;
@@ -839,6 +879,19 @@ header#hero {
   width: 100svw;
 }
 
+.t-5vh {
+  top: 5vh;
+}
+
+.inset-inline-0 {
+  inset-inline: 0;
+}
+
+.hero-icon {
+  translate: 0 -50%;
+  z-index: 9390;
+}
+
 .object-cover {
   object-fit: cover;
 }
@@ -850,9 +903,63 @@ header#hero {
 .grayscale {
   filter: grayscale(1);
 }
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-balance {
+  text-align: balance;
+}
+
+.text-pretty {
+  text-align: pretty;
+}
+
+.w-max-content {
+  width: max-content;
+}
+
 .marquee-container {
   overflow: hidden;
   width: 100svw;
+}
+
+@keyframes scroll-marquee {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#timeline {
+  height: 300vh;
+  padding: 0;
+}
+
+.scroll-marquee-container {
+  position: sticky;
+  top: 0;
+  padding-top: 10vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+}
+
+.scroll-marquee {
+  width: max-content;
+  will-change: transform;
+
+  animation: scroll-marquee linear both;
+
+  animation-timeline: scroll(root block);
+  animation-range: exit 30% exit 110%;
+}
+
+.scroll-marquee-item {
+  width: 33svw;
 }
 
 .infinite-marquee {
@@ -861,13 +968,11 @@ header#hero {
   white-space: nowrap;
 }
 
-/* LEFT Direction */
 .marquee-direction-left {
   translate: 0 0;
   animation: marquee-left 20s linear infinite;
 }
 
-/* RIGHT Direction */
 .marquee-direction-right {
   translate: 0 0;
   animation: marquee-right 30s linear infinite;
@@ -900,11 +1005,12 @@ header#hero {
   mix-blend-mode: screen;
   stroke-dasharray: var(--path-length, 1000);
   stroke-dashoffset: var(--path-length, 1000);
+  z-index: 1010;
 
-  animation: draw-on-scroll 30s linear both;
+  animation: draw-on-scroll linear both;
   animation-timeline: scroll();
 
-  animation-range: entry 10% cover 50%;
+  animation-range: entry 9% entry 15%;
 }
 
 @keyframes draw-on-scroll {
@@ -916,5 +1022,50 @@ header#hero {
 #signature {
   z-index: 9890;
   pointer-events: none;
-  mix-blend-mode: screen;
+
+  path {
+    mask-image: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/logo-mask.svg");
+  }
+}
+
+.scale-entry {
+  animation: scale-entry 10s linear both;
+}
+
+@keyframes scale-entry {
+  0%,
+  50% {
+    scale: 1;
+  }
+}
+
+#summary {
+  padding-top: 10vh;
+}
+
+.announcements-exit {
+  animation: announcements-exit 10s linear both;
+}
+
+@keyframes announcements-exit {
+  95% {
+    translate: 0 0;
+  }
+  to {
+    translate: 0 -100svh;
+  }
+}
+
+#announcements-icon {
+  translate: 0 -11em;
+}
+
+#goo-background {
+  position: fixed;
+  inset: 0;
+  width: 100svw;
+  height: 100svh;
+  z-index: -1;
+  pointer-events: none; /* Let clicks pass through to your website */
+  background-color: #050505; /* Fallback night theme color */
 }
