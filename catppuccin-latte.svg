@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2100 1300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <rect id="catppuccin-latte" x="0" y="0" width="2100" height="1300" style="fill:none;"/>
+    <clipPath id="_clip1">
+        <rect id="catppuccin-latte1" serif:id="catppuccin-latte" x="0" y="0" width="2100" height="1300"/>
+    </clipPath>
+    <g clip-path="url(#_clip1)">
+        <g id="crust" transform="matrix(1.35345,0,0,1.35345,1688.92,906.711)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#eff1f4;"/>
+        </g>
+        <g id="mantle" transform="matrix(1.35345,0,0,1.35345,1338.92,906.711)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#f4f5f8;"/>
+        </g>
+        <g id="regolith" transform="matrix(1.35345,0,0,1.35345,988.919,906.711)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#f8f9fb;"/>
+        </g>
+        <g id="surface-0" transform="matrix(1.35345,0,0,1.35345,638.919,906.711)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#e7e9ee;"/>
+        </g>
+        <g id="surface-1" transform="matrix(1.35345,0,0,1.35345,288.919,906.711)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#dfe1e7;"/>
+        </g>
+        <g id="surface-2" transform="matrix(1.35345,0,0,1.35345,-61.0809,906.711)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#d6d9e0;"/>
+        </g>
+        <g id="overlay-0" transform="matrix(1.35345,0,0,1.35345,1688.92,556.711)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#cdd0d9;"/>
+        </g>
+        <g id="overlay-1" transform="matrix(1.35345,0,0,1.35345,1338.92,556.711)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#c4c5d0;"/>
+        </g>
+        <g id="overlay-2" transform="matrix(1.35345,0,0,1.35345,988.919,556.711)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#babbc8;"/>
+        </g>
+        <g id="subtext-0" transform="matrix(1.35345,0,0,1.35345,638.919,556.711)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#aeb0bf;"/>
+        </g>
+        <g id="subtext-1" transform="matrix(1.35345,0,0,1.35345,288.919,556.711)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#a2a4b6;"/>
+        </g>
+        <g id="text" transform="matrix(1.35345,0,0,1.35345,-61.0809,556.711)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#9597ac;"/>
+        </g>
+        <g id="lavender" transform="matrix(1.1601,0,0,1.1601,1747.64,262.895)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#b2c1ff;"/>
+        </g>
+        <g id="blue" transform="matrix(1.1601,0,0,1.1601,1447.64,262.895)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#70aafd;"/>
+        </g>
+        <g id="sapphire" transform="matrix(1.1601,0,0,1.1601,1147.64,262.895)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#84d0dc;"/>
+        </g>
+        <g id="sky" transform="matrix(1.1601,0,0,1.1601,847.645,262.895)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#7fd3f4;"/>
+        </g>
+        <g id="teal" transform="matrix(1.1601,0,0,1.1601,547.645,262.895)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#7bc8cc;"/>
+        </g>
+        <g id="green" transform="matrix(1.1601,0,0,1.1601,247.645,262.895)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#94d07f;"/>
+        </g>
+        <g id="yellow" transform="matrix(1.1601,0,0,1.1601,-52.3551,262.895)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#f2c679;"/>
+        </g>
+        <g id="peach" transform="matrix(1.1601,0,0,1.1601,1747.64,-37.1045)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#ffac6e;"/>
+        </g>
+        <g id="maroon" transform="matrix(1.1601,0,0,1.1601,1447.64,-37.1045)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#f9959d;"/>
+        </g>
+        <g id="red" transform="matrix(1.1601,0,0,1.1601,1147.64,-37.1045)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#f26d86;"/>
+        </g>
+        <g id="mauve" transform="matrix(1.1601,0,0,1.1601,847.645,-37.1045)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#c584fb;"/>
+        </g>
+        <g id="pink" transform="matrix(1.1601,0,0,1.1601,547.645,-37.1045)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#f8b6e7;"/>
+        </g>
+        <g id="flamingo" transform="matrix(1.1601,0,0,1.1601,247.645,-37.1045)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#f2b8b7;"/>
+        </g>
+        <g id="rosewater" transform="matrix(1.1601,0,0,1.1601,-52.3551,-37.1045)">
+            <rect x="45.13" y="31.984" width="258.597" height="258.597" style="fill:#f1c3b7;"/>
+        </g>
+    </g>
+</svg>
