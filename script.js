@@ -252,84 +252,73 @@ const vsSource = `
 // --- FRAGMENT SHADER (THE MAGIC) ---
 // This calculates the color of every single pixel on the screen 60 times a second
 const fsSource = `
-  precision highp float;
-  uniform vec2 u_resolution;
-  uniform float u_time;
+precision highp float;
+uniform vec2 u_resolution;
+uniform float u_time;
 
-  // The "Smooth Minimum" function - This replaces the SVG Goo Filter!
-  // It calculates the mathematical intersection of two circles and bridges them.
-  float smin(float a, float b, float k) {
-      float h = clamp(0.5 + 0.5 * (b - a) / k, 0.0, 1.0);
-      return mix(b, a, h) - k * h * (1.0 - h);
-  }
+// Smooth Minimum for the gooey merge
+float smin(float a, float b, float k) {
+    float h = clamp(0.5 + 0.5 * (b - a) / k, 0.0, 1.0);
+    return mix(b, a, h) - k * h * (1.0 - h);
+}
 
-  void main() {
-      // Normalize pixel coordinates (from 0 to 1) and correct aspect ratio
-      vec2 uv = gl_FragCoord.xy / u_resolution.xy;
-      vec2 st = uv;
-      st.x *= u_resolution.x / u_resolution.y;
+void main() {
+    vec2 uv = gl_FragCoord.xy / u_resolution.xy;
+    vec2 st = uv;
+    float aspect = u_resolution.x / u_resolution.y;
+    st.x *= aspect;
 
-      float dist = 100.0; // Start with a huge distance
+    float dist = 200.0;
+    
+    // We still use a loop to generate 12 groups, but they wander now
+    for(float i = 0.0; i < 12.0; i++) {
+        
+        // --- WANDERING LOGIC ---
+        // Create a unique anchor for each group
+        vec2 anchor = vec2(
+            mod(i, 4.0) / 4.0 + 0.125, 
+            floor(i / 4.0) / 3.0 + 0.166
+        );
+        anchor.x *= aspect;
 
-      // Grid definition: 4 columns, 3 rows
-      float cols = 4.0;
-      float rows = 3.0;
+        // Add slow, random-feeling drift using prime-ish numbers
+        float driftSpeed = 0.15;
+        vec2 drift = vec2(
+            sin(u_time * 0.3 + i * 55.0),
+            cos(u_time * 0.4 + i * 88.0)
+        ) * 0.6; // The radius of the "wander"
+        
+        vec2 groupCenter = anchor + drift;
+        float groupRotation = u_time * (0.3 + mod(i, 0.6));
 
-      // Loop to create the 4x3 grid (12 groups total)
-      for(float i = 0.0; i < 4.0; i++) {
-          for(float j = 0.0; j < 3.0; j++) {
-              
-              // Center of current grid cell
-              vec2 center = vec2((i + 0.5) / cols, (j + 0.5) / rows);
-              center.x *= u_resolution.x / u_resolution.y; 
+        // 3 circles per group
+        for(float k = 0.0; k < 6.0; k++) {
+            float angle = (k / 6.0) * 6.28318 + groupRotation;
+            float bob = sin(u_time * (0.5 + mod(i+k, 0.5))) * 0.06 + 0.06;
+            vec2 pos = groupCenter + vec2(cos(angle), sin(angle)) * bob;
+            
+            float circleDist = length(st - pos) - 0.02;
+            dist = smin(dist, circleDist, 0.36); // Higher K = "meltier" map
+        }
+    }
 
-              // Create a unique mathematical seed based on grid position
-              float seed = i * 12.3 + j * 45.6;
+    // --- TOPOGRAPHIC STROKE LOGIC ---
+    // Instead of a solid fill, we create a "ring" around the distance field
+    // We take the absolute value so it's thin on both sides of the boundary
+    float thickness = 0.0004; 
+    float edge = abs(dist);
+    
+    // Smoothstep creates the crisp line
+    float line = smoothstep(thickness, 0.0, edge);
 
-              // Group rotation (Different speeds and directions based on seed)
-              float speed = 0.2 + mod(seed, 0.5);
-              float direction = mod(i + j, 2.0) == 0.0 ? 1.0 : -1.0;
-              float groupRotation = u_time * speed * direction;
-
-              // Create the 3 circles inside this specific group
-              for(float k = 0.0; k < 3.0; k++) {
-                  
-                  // Space the 3 circles evenly around the center (120 degrees apart)
-                  float angle = (k / 3.0) * 6.28318 + groupRotation;
-                  
-                  // Calculate bobbing distance from the center point
-                  float bob = sin(u_time * (1.0 + mod(seed + k, 1.0))) * 0.04 + 0.05;
-                  
-                  // Calculate exact position of this circle
-                  vec2 pos = center + vec2(cos(angle), sin(angle)) * bob;
-                  
-                  // Distance from the current pixel to this circle
-                  float circleRadius = 0.035;
-                  float circleDist = length(st - pos) - circleRadius;
-
-                  // THE GOO MATH: Smoothly combine this circle with the others
-                  // 0.08 is the "Gooey Factor" - increase it for more melting!
-                  dist = smin(dist, circleDist, 0.08); 
-              }
-          }
-      }
-
-      // --- COLOR MIXING ---
-      // Anti-aliased edge detection (Is this pixel inside or outside the goo?)
-      float alpha = smoothstep(0.001, -0.001, dist);
-      
-      // Gradient based on depth: Dark Blue -> Light Blue -> White Core
-      vec3 blobColor = mix(vec3(0.0), vec3(0.16, 0.32, 0.75), alpha); 
-      blobColor = mix(blobColor, vec3(0.29, 0.56, 0.89), smoothstep(-0.01, -0.03, dist));
-      blobColor = mix(blobColor, vec3(1.0, 1.0, 1.0), smoothstep(-0.03, -0.06, dist)); 
-
-      // Deep night background color
-      vec3 bgColor = vec3(0.02, 0.02, 0.03);
-      
-      // Final pixel output
-      vec3 finalColor = mix(bgColor, blobColor, alpha);
-      gl_FragColor = vec4(finalColor, 1.0);
-  }
+    // Using "currentColor" isn't directly possible in WebGL, 
+    // but we can set the color to White and handle the tint via CSS "mix-blend-mode" 
+    // or set it to a light blue/grey to match your vibe.
+    vec3 strokeColor = vec3(.2,.2,.3); // Light Blue-Grey
+    
+    // Output with line as the Alpha channel to make it transparent!
+    gl_FragColor = vec4(strokeColor, line);
+}
 `;
 
 // --- WEBGL COMPILATION & SETUP ---
@@ -373,13 +362,18 @@ gl.vertexAttribPointer(positionLocation, 2, gl.FLOAT, false, 0, 0);
 const timeLocation = gl.getUniformLocation(program, "u_time");
 const resolutionLocation = gl.getUniformLocation(program, "u_resolution");
 
-// Handle Resizing
+// Handle Resizing based on the #timeline container, not the window
 function resize() {
-  glCanvas.width = window.innerWidth;
-  glCanvas.height = window.innerHeight;
+  // Get the actual computed size of the canvas within its section
+  const rect = glCanvas.getBoundingClientRect();
+
+  glCanvas.width = rect.width;
+  glCanvas.height = rect.height;
+
   gl.viewport(0, 0, glCanvas.width, glCanvas.height);
   gl.uniform2f(resolutionLocation, glCanvas.width, glCanvas.height);
 }
+
 window.addEventListener("resize", resize);
 resize();
 
@@ -391,3 +385,30 @@ function render(time) {
   requestAnimationFrame(render);
 }
 requestAnimationFrame(render);
+
+function getCalendarWeeksSince(startDate, endDate = new Date()) {
+  const MS_PER_WEEK = 1000 * 60 * 60 * 24 * 7;
+
+  const startOfWeek = (date) => {
+    const d = new Date(date);
+    d.setHours(0, 0, 0, 0);
+    d.setDate(d.getDate() - d.getDay());
+    return d;
+  };
+
+  const sWeek = startOfWeek(startDate);
+  const eWeek = startOfWeek(endDate);
+
+  return Math.round((eWeek - sWeek) / MS_PER_WEEK);
+}
+
+const workStartDate = new Date("1999-06-01");
+const totalWorkWeeks = getCalendarWeeksSince(workStartDate);
+
+const workHoursMin = 40 * totalWorkWeeks;
+const workHoursMax = 80 * totalWorkWeeks;
+const averageWorkHours = (workHoursMin + workHoursMax) / 2;
+
+document.querySelectorAll(".average-work-hours").forEach((span) => {
+  span.innerText = averageWorkHours.toLocaleString();
+});

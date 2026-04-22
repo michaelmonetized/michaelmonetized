@@ -1,317 +1,14 @@
-@import "https://test-create-next-app.vercel.app/_next/static/chunks/1h_h1-1_cd9g5.css?dpl=dpl_gAQRR7yi9L9AZjVuJRUv48HbKWZg";
-
-@font-face {
-  font-family: max;
-  font-weight: 100;
-  font-style: normal;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max15.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max15.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max15.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max15.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max15.svg#max15")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 100;
-  font-style: italic;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max16.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max16.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max16.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max16.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max16.svg#max16")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 200;
-  font-style: normal;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max25.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max25.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max25.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max25.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max25.svg#max25")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 200;
-  font-style: italic;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max26.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max26.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max26.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max26.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max26.svg#max26")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 300;
-  font-style: normal;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max35.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max35.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max35.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max35.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max35.svg#max35")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 300;
-  font-style: italic;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max36.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max36.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max36.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max36.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max36.svg#max36")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 400;
-  font-style: normal;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max45.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max45.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max45.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max45.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max45.svg#max45")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 400;
-  font-style: italic;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max46.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max46.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max46.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max46.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max46.svg#max46")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 500;
-  font-style: normal;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max55.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max55.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max55.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max55.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max55.svg#max55")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 500;
-  font-style: italic;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max56.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max56.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max56.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max56.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max56.svg#max56")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 600;
-  font-style: normal;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max65.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max65.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max65.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max65.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max65.svg#max65")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 600;
-  font-style: italic;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max66.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max66.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max66.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max66.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max66.svg#max66")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 700;
-  font-style: normal;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max75.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max75.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max75.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max75.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max75.svg#max75")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 700;
-  font-style: italic;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max76.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max76.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max76.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max76.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max76.svg#max76")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 800;
-  font-style: normal;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.svg#max95")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 800;
-  font-style: italic;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.svg#max96")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max95.svg#max95")
-      format("svg");
-}
-
-@font-face {
-  font-family: max;
-  font-weight: 900;
-  font-style: italic;
-  font-variant: normal;
-  src: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.eot");
-  src:
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.woff")
-      format("woff"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.ttf")
-      format("truetype"),
-    url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/max/max96.svg#max96")
-      format("svg");
-}
+@import "globals.css";
+@import "max.css";
 
 :root {
-  --img-night: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/master/landscape-night.jpeg");
-  --img-spring: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/master/landscape-spring.jpeg");
-  --img-fall: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/master/landscape-fall.jpeg");
-  --img-winter: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/master/landscape-winter.jpeg");
-  --img-wireframe: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/master/landscape-wireframe.jpg");
+  --img-night: url("landscape-night.jpeg");
+  --img-spring: url("landscape-spring.jpeg");
+  --img-fall: url("landscape-fall.jpeg");
+  --img-winter: url("landscape-winter.jpeg");
+  --img-wireframe: url("landscape-wireframe.jpg");
+
+  --avoid-navbar: calc(200px + 1em);
 
   font-family: max;
   font-size: 21px;
@@ -769,8 +466,8 @@ img.reef {
 
     animation: wave-text-in 20s var(--ease-wave) both;
     animation-delay: calc(100ms + sibling-index() * 2000ms);
-    animation-timeline: scroll(root block);
-    animation-range: entry 10% cover 20%;
+    animation-timeline: view();
+    animation-range: entry 120svh entry 145svh;
   }
 }
 
@@ -879,6 +576,14 @@ img.reef {
   width: 100svw;
 }
 
+.w-1\/3 {
+  width: calc(100% / 3);
+}
+
+.w-2\/3 {
+  width: calc(2 * (100% / 3));
+}
+
 .t-5vh {
   top: 5vh;
 }
@@ -898,6 +603,10 @@ img.reef {
 
 .object-left-bottom {
   object-position: bottom left;
+}
+
+.object-right-top {
+  object-position: top right;
 }
 
 .grayscale {
@@ -920,6 +629,14 @@ img.reef {
   width: max-content;
 }
 
+.place-items-end {
+  place-items: end;
+}
+
+.place-content-end {
+  place-content: end;
+}
+
 .marquee-container {
   overflow: hidden;
   width: 100svw;
@@ -927,39 +644,54 @@ img.reef {
 
 @keyframes scroll-marquee {
   from {
-    transform: translateX(100vw);
+    translate: 0 0;
   }
   to {
-    transform: translateX(-100%);
+    translate: -100% 0;
   }
 }
 
 #timeline {
-  height: 300vh;
+  position: sticky;
+  width: 100svw;
+  height: 400svh;
+  inset: 0;
   padding: 0;
 }
 
 .scroll-marquee-container {
-  position: sticky;
-  top: 0;
-  padding-top: 10vh;
-  width: 100vw;
-  overflow: hidden;
   display: flex;
+  width: 100svw;
+  height: 100svh;
+  overflow: clip;
+}
+
+.avoid-navbar {
+  padding-top: var(--avoid-navbar);
 }
 
 .scroll-marquee {
+  padding-top: var(--avoid-navbar);
+  padding-left: 100svw;
+  height: 100svh;
+
   width: max-content;
   will-change: transform;
 
   animation: scroll-marquee linear both;
 
-  animation-timeline: scroll(root block);
-  animation-range: exit 30% exit 110%;
+  animation-timeline: view();
+  animation-range: entry 133% exit 0%;
 }
 
 .scroll-marquee-item {
-  width: 33svw;
+  min-width: 33vw;
+
+  img {
+    width: 1080px;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .infinite-marquee {
@@ -996,7 +728,9 @@ img.reef {
 
   stroke-linecap: round;
   stroke-linejoin: round;
+}
 
+.animate-draw-stroke {
   animation: draw-on-scroll 3s var(--ease-wave) both;
   animation-delay: 1.5s;
 }
@@ -1008,9 +742,9 @@ img.reef {
   z-index: 1010;
 
   animation: draw-on-scroll linear both;
-  animation-timeline: scroll();
+  /* animation-timeline: view(); */
 
-  animation-range: entry 9% entry 15%;
+  /* animation-range: entry 100% entry 115%; */
 }
 
 @keyframes draw-on-scroll {
@@ -1025,6 +759,9 @@ img.reef {
 
   path {
     mask-image: url("https://raw.githubusercontent.com/michaelmonetized/michaelmonetized/refs/heads/master/logo-mask.svg");
+
+    animation-timeline: view();
+    animation-range: entry 150svh entry 160svh;
   }
 }
 
@@ -1040,19 +777,71 @@ img.reef {
 }
 
 #summary {
-  padding-top: 10vh;
+  padding-top: var(--avoid-navbar);
 }
 
-.announcements-exit {
-  animation: announcements-exit 10s linear both;
+#announcements {
+  position: fixed;
+  inset: 0;
+
+  will-change: transform, opacity;
+  animation: lift-out var(--ease-elastic) both;
+  animation-timeline: view();
+  animation-range: exit 100% cover 300%;
 }
 
-@keyframes announcements-exit {
-  95% {
-    translate: 0 0;
+@keyframes lift-out {
+  from {
+    transform: translateY(0);
+    opacity: 1;
   }
   to {
-    translate: 0 -100svh;
+    transform: translateY(-100svh);
+    opacity: 0;
+  }
+}
+
+.left-in-out {
+  will-change: transform;
+  animation: left-in-out linear both;
+  animation-timeline: view();
+  animation-range: entry 0% exit 100%;
+}
+
+.right-in-out {
+  will-change: transform;
+  animation: right-in-out linear both;
+  animation-timeline: view();
+  animation-range: entry 0% exit 100%;
+}
+
+@keyframes left-in-out {
+  0% {
+    translate: -100% 0;
+  }
+  20% {
+    translate: 0 0;
+  }
+  80% {
+    translate: -60% 0;
+  }
+  1000% {
+    translate: -100% 0;
+  }
+}
+
+@keyframes right-in-out {
+  0% {
+    translate: 100% 0;
+  }
+  20% {
+    translate: 0 0;
+  }
+  80% {
+    translate: 60% 0;
+  }
+  1000% {
+    translate: 100% 0;
   }
 }
 
@@ -1061,11 +850,196 @@ img.reef {
 }
 
 #goo-background {
-  position: fixed;
+  position: sticky;
   inset: 0;
   width: 100svw;
   height: 100svh;
-  z-index: -1;
-  pointer-events: none; /* Let clicks pass through to your website */
-  background-color: #050505; /* Fallback night theme color */
+  pointer-events: none;
+  /* mix-blend-mode: overlay; */
+  opacity: 1;
+  /* scale: 2; */
+}
+
+:root {
+  --aspect-golden: 1 / var(--gwx);
+  --aspect-video: 16 / 9;
+  --aspect-portrait: 9 / 16;
+  --aspect-retro: 4 / 3;
+  --aspect-square: 1 / 1;
+  --aspect-panorama: 3 / 1;
+  --aspect-imax: 2.35 / 1;
+}
+
+.aspect-golden {
+  aspect-ratio: var(--aspect-golden);
+}
+
+.aspect-video {
+  aspect-ratio: var(--aspect-video);
+}
+
+.aspect-portrait {
+  aspect-ratio: var(--aspect-portrait);
+}
+
+.aspect-retro {
+  aspect-ratio: var(--aspect-retro);
+}
+
+.aspect-square {
+  aspect-ratio: var(--aspect-square);
+}
+
+.aspect-panorama {
+  aspect-ratio: var(--aspect-panorama);
+}
+
+.aspect-imax {
+  aspect-ratio: var(--aspect-imax);
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.rotate-180 {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.animate-hover-background-drop {
+  position: relative;
+  overflow: clip;
+  z-index: 2;
+  container-type: isolate;
+
+  * {
+    z-index: 3;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--primary);
+    border-radius: 99Q;
+    scale: 6;
+    translate: 0 -350%;
+    z-index: 1;
+    transition: translate 3s var(--ease-elastic);
+    pointer-events: none;
+  }
+
+  &:hover {
+    color: var(--background);
+    border-color: var(--foreground);
+
+    &:before {
+      translate: 0 -50%;
+    }
+  }
+}
+
+.animate-hover-spin-icon-180 {
+  span {
+    display: inline-block;
+    transition: transform 1s var(--ease-wave);
+  }
+
+  &:hover span {
+    transform: rotate(180deg);
+  }
+
+  &:hover span.rotate-180 {
+    transform: rotate(0deg);
+  }
+}
+
+.gallery-column:nth-child(even) {
+  margin-top: 300px;
+}
+
+.gallery-item {
+  width: 100%;
+
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDciIGhlaWdodD0iNDExIiB2aWV3Qm94PSIwIDAgNDA3IDQxMSIgZmlsbD0ibm9uZSI+CjxwYXRoIGQ9Ik0wIDhDMCAzLjU4MTczIDMuNTgxNzIgMCA4IDBIMzk4Ljg5QzQwMy4zMDggMCA0MDYuODkgMy41ODE3MiA0MDYuODkgOFYzNjQuOTgzQzQwNi44OSAzNjkuNDAxIDQwMy4zMDggMzcyLjk4MyAzOTguODkgMzcyLjk4M0gyNjMuMzI5QzI1Ni4zMjkgMzcyLjk4MyAyNDkuNzA5IDM3Ni4xNzEgMjQ1LjM0NSAzODEuNjQ0TDIyOC44NDYgNDAyLjMzOEMyMjQuNDgyIDQwNy44MTIgMjE3Ljg2MyA0MTEgMjEwLjg2MiA0MTFIOEMzLjU4MTczIDQxMSAwIDQwNy40MTggMCA0MDNWOFoiIGZpbGw9IiNmZmYiLz4KPC9zdmc+");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+
+  .gallery-item-screenshot {
+    z-index: 3;
+
+    img {
+      aspect-ratio: 407 / 411;
+      object-fit: cover;
+      object-position: top left;
+      position: absolute;
+      inset: 0;
+      z-index: 4;
+
+      --mask-cricle-size: calc(
+        1.5 * ((var(--container-7xl) / 4) - (var(--text-xl) * 4))
+      );
+
+      mask-image: radial-gradient(
+        circle var(--mask-cricle-size) at center,
+        #ffff 100%,
+        #fff0 100%
+      );
+      mask-repeat: no-repeat;
+      mask-size: 600% 600%;
+      mask-position: center calc(var(--mask-cricle-size) * -5);
+
+      transition:
+        mask-position 0.31s ease-out,
+        mask-size 0.31s ease-out;
+    }
+  }
+
+  .gallery-item-logo svg {
+    fill: currentcolor;
+    scale: 0.5;
+  }
+
+  .gallery-item-outer {
+    > svg {
+      position: absolute;
+      inset: 0;
+      z-index: 30;
+      width: calc(100% - 8px);
+      height: auto;
+
+      stroke: currentColor;
+      stroke-width: 0.25em;
+
+      &:first-child {
+        z-index: 11;
+
+        stroke: var(--hover-color);
+
+        path {
+          stroke-dasharray: var(--path-length);
+          stroke-dashoffset: var(--path-length);
+
+          transition: stroke-dashoffset 1s var(--ease-wave);
+        }
+      }
+    }
+  }
+
+  &:hover,
+  & *:hover {
+    .gallery-item-inner {
+      translate: 0 0;
+    }
+
+    .gallery-item-outer > svg:first-child path {
+      stroke-dashoffset: 0;
+    }
+
+    .gallery-item-screenshot img {
+      mask-size: 600% 600%;
+      mask-position: center;
+    }
+  }
 }
