@@ -8,6 +8,10 @@ Canton, NC USA 28716 | [Website](https://www.michaelchurley.com) | [LinkedIn](ht
 
 ---
 
+## Current work
+
+**Technical SEO Field Guide** — a 68-page practical guide plus companion toolkit. [Free sample and book details](https://hustle-revenue-path.michaelh-rley.chatgpt.site/field-guide). $49 individual; $249 for up to five people in the same organization.
+
 ## TL;DR
 
 I spent 10 years running a marketing agency starting at the bottom and quickly rising within the first 6 months to director of operations. I brought great success through software engineering, marketing, closing new business, managing teams and producing results.
