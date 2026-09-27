@@ -29,7 +29,7 @@ Canton, NC, USA · [Website](https://www.michaelchurley.com) · [LinkedIn](https
 
 - Director, Hustle Launch (2024 to present)
 - CTO, Realay.com / Kaibo, LLC (2023 to 2024)
-- Director of Operations, White Fox Studios (2015 to 2024): 10 years leading sales, marketing, operations, and growth for a web agency
+- Director of Operations, White Fox Studios (2015 to 2024): 9 years running all operations (SEO, sales, marketing, delivery, and growth) for an SEO agency
 - Co-owner / operator, Hurley's Creekside Dining & Rhum Bar (2010 to 2014): grew annual revenue from $1.3M to $5.33M
 - B.S. Computer Science, College of Charleston
 
